@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SearchFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/search_appBarLayout"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/search_tollBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/top_search_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="17dp"
+                android:hint="Enter search word..." />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/search_appBarLayout"/>
+
+</RelativeLayout>
